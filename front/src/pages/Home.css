@@ -1,0 +1,70 @@
+/* Container for the entire homepage */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+  
+  /* Hero Section with Background Image */
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  /* CTA Boxes Section */
+  .cta-boxes {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 50px 0;
+  }
+  
+  .cta-box {
+    flex: 1;
+    margin: 0 15px;
+    text-align: center;
+    background-color: #39a599;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .cta-link {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  

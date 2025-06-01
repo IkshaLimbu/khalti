@@ -1,0 +1,456 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}/*
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+/* for nav links*/
+/* NavLinks.css */
+
+
+.contentContainer {
+  display: flex;
+  margin: 0;
+}
+
+.bodys {
+  display: flex;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100% !important;
+
+}
+
+nav {
+  width: 200px;
+  /* Adjust width as per your need */
+  background-color: #0F7A6E;
+  /* Background color for nav */
+
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.nav-link:hover {
+  background-color: #FFFFFF;
+  /* Hover background color */
+  color: #0F7A6E;
+  /* Hover text color */
+}
+
+.nav-link.active {
+  background-color: #FFFFFF;
+  /* Active link background */
+  color: #0F7A6E;
+  /* Active link text color */
+}
+
+.content {
+  flex-grow: 1;
+  /* Takes the remaining space in the row */
+}
+
+/*for home top*/
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  box-shadow: 0 4px 6px -2px rgba(0, 122, 110, 0.3);
+}
+
+.image {
+  margin-left: 30px;
+}
+
+.navigation {
+  margin-top: 20px;
+  display: 'flex';
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.link {
+  color: #0F7A6E;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 20px;
+}
+
+.link:hover {
+  background-color: #0F7A6E;
+  color: white;
+}
+
+.fa-user:hover {
+  box-shadow: 1PX 1PX 1PX 1PX rgba(0, 122, 110, 0.3);
+}
+
+/* Container for the entire homepage */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+/* Hero Section with Background Image */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+/* CTA Boxes Section */
+.cta-boxes {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 50px 0;
+}
+
+.cta-box {
+  flex: 1;
+  margin: 0 15px;
+  text-align: center;
+  background-color: #39a599;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cta-box:hover {
+  transform: translateY(-10px);
+}
+
+.cta-link {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* Victim Requests Section */
+.victim-requests {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.victim-requests h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.request-boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.request-box {
+  background-color: #e74c3c;
+  color: white;
+  padding: 20px;
+  width: 30%;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Footer Section */
+.home-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  width: 100%;
+}
+
+
+
+.logoContainer {
+  display: flex;
+  /* Added for better layout */
+  flex-direction: column;
+  /* Align logo and slogan vertically */
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  /* Center horizontally */
+  width: 50%;
+  /* Adjusted width */
+  padding: 20px;
+  /* Added some padding */
+}
+
+.logoContainer img {
+  width: 150px;
+  /* Set width for logo */
+  height: 80px;
+  /* Set height for logo */
+}
+
+.logoContainer h1 {
+  margin-bottom: 10px;
+  /* Added some spacing */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  margin-left: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+.form-input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.submit-btn {
+  width: 80%;
+  padding: 12px;
+  background-color: #f9796d;
+  color: white;
+  border: none;
+  margin-left: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #FF6F61;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-btn {
+  text-decoration: none;
+  color: blue;
+}
+
+.login-btn:hover {
+  background-color: #ddd;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.highlight {
+  color: #0F7A6E;
+}
+
+
+
+/* css for user management */
+/* General styling for the content container */
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Styling for the user management section */
+.user-management {
+  flex-grow: 1;
+  background-color: #e6dede;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 30px 30px;
+}
+
+/* Styling for the table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table header styling */
+.user-table thead {
+  background-color: #129788;
+  color: white;
+}
+
+.user-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Table row styling */
+.user-table tbody tr {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for rows */
+.user-table tbody tr:hover {
+  background-color: #e2e2e2;
+}
+
+/* Table cell styling */
+.user-table td {
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Action buttons */
+.user-table button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.user-table button:hover {
+  background-color: #45a049;
+}
+
+/* Deactivate/Activate buttons */
+.user-table button[onClick*='handleUserDeactivate'] {
+  background-color: #f39c12;
+}
+
+.user-table button[onClick*='handleUserDeactivate']:hover {
+  background-color: #e67e22;
+}
+
+/* Delete button */
+.user-table button[onClick*='handleUserDelete'] {
+  background-color: #e74c3c;
+}
+
+.user-table button[onClick*='handleUserDelete']:hover {
+  background-color: #c0392b;
+}
+
+/* Make table responsive */
+@media (max-width: 768px) {
+
+  .user-table th,
+  .user-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .user-table {
+    font-size: 12px;
+  }
+
+  .user-table button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

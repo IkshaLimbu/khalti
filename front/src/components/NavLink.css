@@ -1,0 +1,63 @@
+nav {
+  background-color: #0F7A6E;
+  /* Set background color */
+
+  height: 100vh;
+  /* Full viewport height */
+  width: 200px;
+  /* Adjust width as needed */
+}
+
+ul.nav {
+  list-style-type: none;
+  /* Remove bullets */
+  padding-top: 20px;
+  margin: 0;
+}
+
+.nav-link {
+  width: 200px;
+}
+
+ul.nav li .nav-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  /* Default text color */
+  font-weight: bold;
+  background-color: transparent;
+  /* Ensure no background initially */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition */
+}
+
+ul.nav li .nav-link:hover {
+  background-color: #FFFFFF;
+  /* On hover, set background to white */
+  color: #0F7A6E;
+  /* Change text color on hover */
+}
+
+ul.nav li .nav-link.active {
+  background-color: #FFFFFF;
+  /* Active background color */
+  color: #0F7A6E;
+  /* Active text color */
+}
+
+button.btn-danger {
+  background-color: #FF4D4D;
+  /* Logout button color */
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.btn-danger:hover {
+  background-color: #FF6E6E;
+  /* Darken the color on hover */
+}
